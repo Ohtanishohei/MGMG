@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>MuGiMuGi人气投票</title> 
+</head>
+
+<style type="text/css">
+    div{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        font-size: 20px;
+        padding-left: 10%;
+        margin-top: 3%;
+    }
+
+    span{
+        font-size: 16px;
+        padding-left: 10%;
+    }
+
+    p.sbt{
+        padding: 0;
+        text-align: center;
+    }
+</style>
+<body>
+    <div>
+        <h1>第一届MGMG人气投票大赛</h1>
+    </div>
+    <div>
+    <form id="vote" action="vote.php" method="get">
+        <p>你觉得MGMG好吗？</p>
+        <span><input type="radio" name="ok" value="VG">很棒</span><br>
+        <span><input type="radio" name="ok" value="FT">一般<br></span>
+        <span><input type="radio" name="ok" value="BD">不咋地<br></span>
+
+        <p>ARASHI里喜欢谁？</p>
+        <span><input type="checkbox" name="ARASHI[]" value="大野智">大野智<br></span>
+        <span><input type="checkbox" name="ARASHI[]" value="樱井翔">樱井翔<br></span>
+        <span><input type="checkbox" name="ARASHI[]" value="相叶雅纪">相叶雅纪<br></span>
+        <span><input type="checkbox" name="ARASHI[]" value="二宫和也">二宫和也<br></span>
+        <span><input type="checkbox" name="ARASHI[]" value="松本润">松本润<br></span>
+
+        <p>J家里喜欢哪个团？</p>
+        <span><input type="text" name="团"><br></span>
+
+
+        <p>新番你觉得哪部最好看？</p>
+        <span><select name="xinfan">
+        <option value="紫罗兰">紫罗兰</option><br>
+        <option value="国家队">国家队</option><br>
+        <option value="PPPP">poppipi</option><br>
+        <option value="骨傲天">骨傲天</option><br>
+        <option value="百变小樱">百变小樱</option><br>
+        <option value="刻刻">刻刻</option><br>
+        </select></span>
+        
+        <p class="sbt">
+        <span><input type="submit" value="提交"></span>
+        </p>
+    </form>
+    </div>
+</body>
+</html>

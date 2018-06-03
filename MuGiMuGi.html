@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>MuGiMuGi</title> 
+<style type="text/css">
+    body{
+        padding: 0;
+        margin:0;
+        background-image:url('img/topimgs.jpg');
+        background-repeat:repeat-x;
+        background-attachment:local;
+    }
+    div#mugimugi{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+    div#navi{
+        margin:0 auto;
+        padding:0;
+        border:0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    h1{
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        padding-left: 50px;
+        text-shadow: 3px 1px #ffb618;
+        font-size: 60px;
+        font-style:oblique;
+        letter-spacing:0.5px;
+        color: rgb(255, 102, 0);
+        margin: 0;
+        padding-top: 50px;
+        position: absolute;
+    }
+    ul#nav {
+        list-style-type: none;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    ul#nav li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+
+    li {
+        float: left;
+    }
+
+    li>a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 12px 13px;
+        text-decoration: none;
+        padding-left:35px;
+        font-size: 14px;
+    }
+    nav{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(206, 215, 255);
+        height:43px ;
+    }
+    nav>ul{ 
+        list-style-type: none;
+        margin: 0 auto;
+        overflow: hidden;
+        display: inline-block;
+        -webkit-padding-start: 0px;
+    }
+    
+    form.search{
+        float: right;
+        position: relative;
+        padding-top: 8px;
+        padding-left:120px;
+    }
+
+    form.search>input{
+        width: 100px;
+        border-radius: 30px;
+    }
+
+    form.search>input#submit{
+        width:45px;
+    }
+    nav>ul>li{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    nav>ul>li>a {
+        color:black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    div.nav{
+        margin:0;
+        padding:0;
+        border:0;
+        position:absolute;
+        top: 144px;
+        width:100%;
+        background-color:white;
+    }
+
+    nav ul>li>a:hover{
+        background-color: rgb(185, 185, 185);
+        color:whitesmoke;
+    }
+
+    @media screen and (max-width: 600px){
+    nav {
+        overflow: hidden;
+        }
+    }
+
+    .mugi-footer{
+    background-color: #f6f9fa;
+    padding-top:80px;
+    padding-bottom: 126px;
+    }
+
+    .mugi-footer .mugi-postcards {
+    list-style: none;
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 30px;
+    }
+
+    .cards {
+    float: left;
+    width: 100px;
+    position: relative;
+    margin-bottom: 16px;
+    }
+
+    .cards>a{
+        font-size: 12px;
+    }
+
+    .tips {
+    margin-bottom: 22px;
+    }
+
+    .tips>a{
+        color:rgb(145, 145, 145);
+        font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="mugimugi"><a href="MuGiMuGi.html" style="text-decoration:none"><h1>MuGiMuGi</h1></a></div>
+    <div id="navi">
+    <ul id="nav">
+            <li><a href="MuGiMuGi.html">主页</a></li>
+            <li><a href="https://www.bilibili.com/" target="_blank">B站</a></li>
+            <li><a href="https://live.bilibili.com/" target="_blank">直播</a></li>
+            <li style="float:right"><a class="active" href="#" target="_blank">注册/登陆</a></li>
+          </ul>
+          </div>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li class><a href="http://www.johnnys-net.jp/" target="_blank">J家</a></li>
+                <li><a href="http://www.meishichina.com/" target="_blank">美食</a></li>
+                <li><a href="https://bangumi.bilibili.com/22/?spm_id_from=333.334.primary_menu.7" target="_blank">番剧</a></li>
+                <li><a href="MGMGvote.html" target="_blank">投票</a></li>
+                <li><a href="https://www.bilibili.com/v/ent/variety/#/" target="_blank">综艺</a></li>
+                <li><a href="https://www.bilibili.com/v/kichiku/?spm_id_from=333.101.primary_menu.60" target="_blank">鬼畜</a></li>
+                <li><a href="file:///D:/MuGiMuGi/MuGiMuGi.html" target="_blank">舞蹈</a></li>
+                <li><a href="https://www.bilibili.com/" target="_blank">音乐</a></li>
+                <li><a href="https://live.bilibili.com/" target="_blank">游戏</a></li>
+                <li><a href="file:///D:/MuGiMuGi/MuGiMuGi.html" target="_blank">电影</a></li>
+                <li><a href="https://www.bilibili.com/tv/?spm_id_from=333.11.primary_menu.84" target="_blank">电视剧</a></li>
+                        <form class="search">
+                            <input type="text" name="search" >
+                            <input id="submit" type="button" value="搜索">
+                        </form>
+                </ul>
+                
+        </nav>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="mugi-footer">
+    <ul class="mugi-postcards">
+        <li>
+                <div class="tips">
+                        <a>MuGiMuGi</a>
+                    </div>
+            <div class="cards">
+                <a>关于我们</a>
+            </div>
+            <div class="cards">
+                <a>联系我们</a>
+            </div>
+            <div class="cards">
+                <a>加入我们</a>
+            </div>
+        </li>    
+    </ul>
+</div>
+ 
+</body>
+</html>
